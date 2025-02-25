@@ -105,7 +105,7 @@ const AllUsers = () => {
                           color: "black",
                         }}
                       >
-                        Email{" "}
+                        Password{" "}
                       </span>{" "}
                       {user?.password}
                     </td>

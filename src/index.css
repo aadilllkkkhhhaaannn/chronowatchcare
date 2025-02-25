@@ -20,7 +20,7 @@ a {
   justify-content: end;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 360px) {
   svg {
     width: 50px;
     transform-origin: center;
@@ -65,7 +65,7 @@ a {
     overflow-x: auto;
   }
 
-  @media (max-width: 412px) {
+  @media (max-width: 360px) {
     .table {
       font-size: 13px;
       position: relative;
@@ -90,8 +90,8 @@ a {
       display: inline-block;
     }
 
-    /* Hide badge on screens with max-width 412px */
-    @media (max-width: 412px) {
+    /* Hide badge on screens with max-width 360px */
+    @media (max-width: 360px) {
       .status-badge {
         display: none;
       }
@@ -304,7 +304,7 @@ circle {
 /* */
 
 /* Add this to your CSS file */
-@media (max-width: 412px) {
+@media (max-width: 360px) {
   .box {
     width: 95%;
     position: relative;
