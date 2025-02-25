@@ -7,7 +7,7 @@ import Loading from "../Components/Loading";
 import { toast } from "react-toastify";
 
 const AllComplaints = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 320);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 412);
   const { watchName, isLoading, isError, isSuccess, message } = useSelector(
     (state) => state.watch
   );
