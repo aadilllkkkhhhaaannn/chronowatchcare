@@ -47,8 +47,6 @@ const Login = () => {
 
   //   dispatch(loginUser(formData));
 
- 
-    
   //   dispatch(loginUser({ ...formData, registrationNumber }));
   // };
 
@@ -60,17 +58,24 @@ const Login = () => {
       return;
     }
 
-    dispatch(loginUser(formData)); 
+    toast.success(
+      <div>
+        <p>Register Successfully</p>
+      </div>,
+      { position: "top-center", theme: "dark" }
+    );
+
+    dispatch(loginUser(formData));
   };
 
   useEffect(() => {
     if (isSuccess && user) {
-      toast.success(
-        <div>
-          <p>Login Successfully</p>
-        </div>,
-        { position: "top-center", theme: "dark" }
-      );
+      // toast.success(
+      //   <div>
+      //     <p>Login Successfully</p>
+      //   </div>,
+      //   { position: "top-center", theme: "dark" }
+      // );
       navigate("/");
     }
 
@@ -83,7 +88,6 @@ const Login = () => {
       );
     }
   }, [user, isSuccess, isError, navigate]);
-
 
   useEffect(() => {
     if (user) {

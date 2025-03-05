@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { registerUser } from "../features/auth/authSlice";
 import Loading from "../Components/Loading";
 import { Link, useNavigate } from "react-router-dom";
-import CopyToClipboard from "../Components/CopyToClipboard"; // Make sure this is imported
 import { toast } from "react-toastify";
 
 
@@ -80,7 +79,6 @@ const Register = () => {
     }
 
     if (isError && message) {
-      // toast.error(message);
     }
   }, [user, isSuccess, isError, message]);
 

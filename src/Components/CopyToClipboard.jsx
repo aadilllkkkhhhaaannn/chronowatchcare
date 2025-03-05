@@ -8,7 +8,7 @@ const CopyToClipboard = ({ text }) => {
   const handleCopy = () => {
     navigator.clipboard.writeText(text);
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+    setTimeout(() => setCopied(false), 2000); 
   };
 
   return (

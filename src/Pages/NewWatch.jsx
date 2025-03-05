@@ -7,7 +7,7 @@ import Loading from "../Components/Loading";
 import Backbutton from "../Components/Backbutton";
 
 const NewWatch = () => {
-  const { user } = useSelector((state) => state.auth); // User data
+  const { user } = useSelector((state) => state.auth);
   const { isLoading, isError, isSuccess, message } = useSelector(
     (state) => state.watch
   );
