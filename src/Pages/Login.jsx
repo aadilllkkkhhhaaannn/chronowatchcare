@@ -60,7 +60,7 @@ const Login = () => {
 
     toast.success(
       <div>
-        <p>Register Successfully</p>
+        <p>Login Successfully</p>
       </div>,
       { position: "top-center", theme: "dark" }
     );
